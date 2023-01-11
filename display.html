@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>my first web page</h2>
+    <p>my first paragraph</p>
+    <p id="demo"></p>
+    <p class="cdemo"></p>
+    <button onclick="document.write('new document')">try</button>
+
+    <script> 
+        document.querySelector("#demo").innerHTML=5+6
+        document.querySelector(".cdemo").innerHTML="this is via query seecltor funtion with class selector"
+     </script>
+     <script>
+        document.write("this is from wright function")
+        </script>
+     <script>
+        window.alert("please conform your information")
+     </script>
+     <script>
+        console.log("This is my first console log",document)
+     </script>
+</body>
+</html>
