@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>string method</h1>
+    <p id="demo"></p>
+    <script>
+        // slice example
+        const text='abcdef';
+        console.log("length of string::", text.length);
+       const newtext= text.slice(2,4);
+       console.log("new text is::",newtext);
+       // substring and slice are similar -- just that if you pass start or send less than 0 i.e negative it will considerd it as 0
+    //    substring example
+    let text1= "apple, banana, kiwi"; 
+    
+    let part= text1.substring("extracting banana via substring method ",7,13 );
+    console.log("new fruit is::",part );
+    document.getElementById('demo').innerHTML=part;
+    // negative slice example
+    let text2= "apple, banana, kiwi";
+    let part1= text1.slice(-13 );
+    console.log("new fruit is::",part1 );
+    // substr example
+    let text3= "apple, banana, kiwi"; 
+    let part2= text3.substr(7,6);
+    console.log("banana extracted via substr method::",part2);
+ 
+
+    </script>
+</body>
+</html>
