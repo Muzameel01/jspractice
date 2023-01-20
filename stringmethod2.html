@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>string method</h1>
+    <p id="demo"></p>
+    <script>
+        
+let text="apple, banana, kiwi, banana";
+let index= text.indexOf("banana",15)
+console.log("banana position is::",index);
+const newstring=text.slice(index);
+console.log("the new string is::",newstring); 
+const searchindex=text.search("banana");
+console.log("position with search let is::",searchindex);
+let text2= "the rain in SPAIN stays mainely in the plain";
+const matchvalue=text2.match(/ain/gi)
+console.log("retured value is",matchvalue);
+let text3="hello world welcome to universe";
+const includevalue= text3.includes("world");
+console.log("returend value is::", includevalue);
+const startvalue=text3.startsWith("hello");
+console.log("value started from::",startvalue);
+ 
+    </script>
+</body>
+</html>
