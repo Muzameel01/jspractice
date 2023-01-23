@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>array example</h1>
+    <p id="demo"></p>
+    <script>
+
+
+    /* //data type */
+    /* //number,string,bigint,null,undefined,object */
+    // object--- object,array(object)
+    // object -- entity-car,person----objects---property and method 
+    // const cars=["BMW","Volvo","T oyota"]
+    const cars=[{
+        name:"volvo",
+        model:350
+    },
+    {   name:"bmw",
+        model:550},
+        {
+        name:"toyota",
+        model:4000}
+
+]
+    document.getElementById("demo").innerHTML=`Total numbers of cars=${cars.length}</br >
+    car1 name=${cars[0].name}</br>
+    car1 model=${cars[0].model} </br>
+    car2 name=${cars[1].name}</br>
+    car2 model=${cars[1].model}</br>
+    car3 name=${cars[2].name}</br>
+    car3 model=${cars[2].model }</br>`
+</script>
+</body>
+</html>
