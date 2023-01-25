@@ -47,7 +47,8 @@
         function onAddNumberClicked(){
             numArray.push(Number(inputNumberElement.value));
             console.log(inputNumberElement.value);
-            numElement.innerHTML=numArray.sort()
+            numElement.innerHTML=numArray.sort(function(a,b){
+                return a-b});
             numElement.innerHTML=numArray.join("|");
             
 
