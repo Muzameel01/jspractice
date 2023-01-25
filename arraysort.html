@@ -27,7 +27,8 @@
         function onAddFruitClicked(){
             fruit.push(inputFruit.value);
             console.log(inputFruit.value);
-            fruitElement.innerHTML=fruit.sort()
+            // fruitElement.innerHTML=fruit.sort()
+            fruit.reverse()
             fruitElement.innerHTML=fruit.join("|");
             
 
