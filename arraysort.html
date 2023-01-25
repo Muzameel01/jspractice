@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>array shorting</h1>
+    <p id="numId"></p>
+    <input id="inputId" type="number" placeholder="Enter Numbers">
+    <button onclick="onAddNumberClicked()">add number to the array</button> <br>
+
+     
+    <p id="fruitId"></p>
+    <input id="inputId2" type="text" placeholder="Enter Fruit Names">
+    <button onclick="onAddFruitClicked()">add Fruit to the array</button>
+
+
+    <script>
+        
+        const fruit=[];
+        const fruitElement=document.getElementById('fruitId')
+        const inputFruit=document.getElementById("inputId2")
+
+        function onAddFruitClicked(){
+            fruit.push(inputFruit.value);
+            console.log(inputFruit.value);
+            // fruitElement.innerHTML=fruit.sort()
+            fruit.reverse()
+            fruitElement.innerHTML=fruit.join("|");
+            
+
+
+            
+
+
+        }
+
+
+
+        const numArray=[];
+        const numElement=document.getElementById('numId');
+        const inputNumberElement=document.getElementById('inputId')
+
+        function onAddNumberClicked(){
+            numArray.push(Number(inputNumberElement.value));
+            console.log(inputNumberElement.value);
+            numElement.innerHTML=numArray.sort()
+            numElement.innerHTML=numArray.join("|");
+            
+
+
+        }
+
+    </script>
+</body>
+</html>
