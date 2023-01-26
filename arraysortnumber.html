@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>array example</h1>
+    <p id="demo"></p>
+    <button onclick="randomButton()">try it</button>
+    <script>
+        const numarray=[1,4,3,8,6,100,50];
+        document.getElementById("demo").innerHTML=numarray;
+        console.log(numarray);
+        function randomButton(){
+       numarray.sort(function () {
+            // console.log("value of a is",a);
+            // console.log("value of b is",b );
+            // console.log("value of a-b is",a-b);
+
+            return 0.5-Math.random()});
+            document.getElementById("demo").innerHTML=numarray;
+
+        
+    };
+        </script>
+</body>
+</html>
