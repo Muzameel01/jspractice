@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html l ang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Methods</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        const num=[45,25,7,36,12];
+        const num1=[45,25,7,36,12];
+        const allover18=num.every(function(value){
+    
+            return value>18;
+        })
+        document.getElementById("demo").innerHTML=`the string is over 18 ${allover18}` 
+        const allover181=num1.some(function(value){
+    
+    return value>18;
+})
+document.getElementById("demo1").innerHTML=`the string is over 18 ${allover181}`
+const alpha="ABCDEF";
+const arrayalpha=Array.from(alpha);
+console.log(arrayalpha);
+    </script>
+</body>
+</html>
