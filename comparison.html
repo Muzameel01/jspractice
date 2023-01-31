@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="age" type="text" placeholder="enter your age">
+    <button onclick="checkage()">Vote!</button>
+    <p id="demo"> 
+    </p>
+    <script>
+
+        const x=20;
+        console.log(x>18);
+        const ageInput=document.getElementById("age")
+        const pElement=document.getElementById("demo")
+        function checkage(){
+            console.log(ageInput.value);
+            // if(Number(ageInput.value>18)){
+            //     pElement.innerHTML="Great you are eligible to vote"
+            // }
+            // else {
+            //     pElement.innerHTML="you are too young to vote"
+            // }
+            
+
+            //ternary operator 
+            // condition? "if true":"if false"
+            if (isNaN(ageInput.value)){
+                pElement. 
+                innerHTML="invalid input"
+            }
+            else{
+            pElement.innerHTML=Number(ageInput.value>18)
+            ?"great you are eligible to vote " 
+            : "you are too young to vote" 
+            }
+        }
+    </script>
+</body>
+</html>
