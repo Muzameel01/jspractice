@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <input id="numId" type="number" placeholder="Enter a number">
+    <button onclick="onIsPrime()">check</button>
+    <script>
+        function onIsPrime() {
+          const  numElement=document.getElementById("numId");
+            const pElement=document.getElementById("demo");
+            const isPrimeNumber= isprime(Number(numElement.value))
+            pElement.innerHTML= isPrimeNumber?
+            "The Number is Prime":
+            "The Number is not Prime"
+        }
+        function isprime(num) {
+            let prime=num!=1;
+            for (let i = 2; i < num; i++) {
+                if (num% i ==0) {
+                    prime=false
+                    break;
+                }
+                  
+            } 
+            return prime
+        }
+        const isPrimeNumber=isprime(1);
+    
+        // document.getElementById("demo").innerHTML=isPrimeNumber
+        // let txt=" "
+        // for (let i = 0; i < 10; i++) {
+        //     if (i===3) {
+        //         break;
+        //     }
+        //     txt+=`The number is ${i} </br>`;
+        // }
+        // document.getElementById("demo").innerHTML=txt
+    </script>
+</body>
+</html>
