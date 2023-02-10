@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+
+        class Car {
+            constructor(name,year){
+                
+                this.name=name;
+                this.year=year;
+                console.log("constructor method called . thi is used for initialization");
+            }
+            age(){
+                const currentDate= new Date()
+                return currentDate.getFullYear()- this.year
+            }
+        }
+        const car1= new Car("volvo",2000,);
+        document.getElementById("demo").innerHTML=`name of car is::${car1.name}<br>   age of car is::  ${car1.age()}<br>   year of car is::${car1.year       }` 
+        console.log(car1);
+    </script>
+</body>
+</html>
