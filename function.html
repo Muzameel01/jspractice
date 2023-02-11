@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="myfunction()">call via normal function</button>
+    <button onclick="newfunction()">call via arrow function</button>
+    <script>
+        // normal javascript function
+        function myfunction(){
+            console.log(this);
+        }
+        // function assigned/used as a variable name
+        const person={
+            fullname: function(){
+
+            },
+        }
+        // arrow function--ES6
+        const newfunction=()=>{
+            // block of code
+            console.log(this);
+        }
+
+    </script>
+</body>
+</html>
