@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="startButton()">Start</button>
+    <button onclick="stopButton()">Stop</button>
+    <button onclick="resetButton()">Restart</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+<script>
+        let timerid;
+        let count=0
+        function startButton(){
+            const pElement=document.getElementById('demo')
+            
+            timerid=setInterval(()=>{
+                pElement.innerHTML=count++
+            },1000)
+        }
+        function stopButton(){
+            clearInterval(timerid);
+        }
+        function resetButton(){
+            pElement.innerHTML="";
+            count=0;
+            clearInterval(timerid);
+        }
+</script>
+</body>
+</html>

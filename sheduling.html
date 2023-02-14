@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="handleAfterOnClick()">display text after 15 sec</button>
+    <button onclick="handleEveryOnClick()">display text every 2 sec</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        function handleAfterOnClick(){
+            setTimeout(()=>{
+                console.log("after 1 sec");
+                document.getElementById("demo").innerHTML="I am printed after 15 sec"
+            },15000);
+
+        }
+        let timerid;
+        function handleEveryOnClick(){
+            let count=0
+            clearInterval(timerid)
+            timerid=setInterval(()=>{
+                document.getElementById("demo1").innerHTML=count++
+
+            },1000 )
+            setTimeout(()=>{
+                clearTimeout(timerid);
+            },10000)
+        }
+
+    </script>
+</body>
+</html>
